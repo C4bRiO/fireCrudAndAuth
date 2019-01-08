@@ -1,6 +1,6 @@
-# Employee Manager
+# fireCrudAuth
 
-> Vue.js app to manage employees that uses FireStore as a backend.
+>  FIREBASE- VUE.JS - VUETIFY : CRUD w/Auth
 
 ## Build Setup
 
@@ -20,10 +20,12 @@ npm run build --report
 
 ## App Info
 
-### Author
+### Authors
 
-Brad Traversy
+Brad Traversy (The original project)
 [Traversy Media](http://www.traversymedia.com)
+
+Ever Leiva (Auth, vuetify integration)
 
 ### Version
 
