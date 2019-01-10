@@ -2,6 +2,7 @@
   <v-footer
     height="auto"
     color="#DDD"
+    v-if="isLoggedIn"
   >
     <v-layout
       justify-center
@@ -30,6 +31,8 @@
 </template>
 
 <script>
+  import firebase from 'firebase';
+
   export default {
     data: () => ({
       links: [
@@ -39,7 +42,14 @@
         'Services',
         'Blog',
         'Contact Us'
-      ]
-    })
+      ],
+      isLoggedIn:false
+    }),
+    created(){
+      if(firebase.auth().currentUser)
+      {
+        this.isLoggedIn = true;
+      }
+    }
   }
 </script>
